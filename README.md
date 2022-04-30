@@ -3,6 +3,7 @@
 # [Demo Link](https://www.youtube.com/watch?v=UJHMVexyD5k)
 ## Task
 Frontend: A simple create and view profile page(minimal and modern) in react native that lets you interface with a self-hosted backend.
+
 Backend: Set up endpoints to perform simple CRUD operations to create/read/update/delete profiles of a user.
 
 ## To run frontend
