@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Profile update</title>
+		<style>
+			body {
+				background-image: url('https://img4.goodfon.com/wallpaper/nbig/a/da/abstraktsiia-oboi-1920x1080-polosy-fon-goluboi-fon-kreativ-k.jpg');
+			}
+
+			body{
+				background: #F0F2F5;
+			}
+
+			::placeholder{
+				color: #C6B1BE;
+				padding-left: 10px;
+				border-color:#93999C;
+			}
+
+			.a{
+				margin-left: 550px;
+				margin-top: 30px;
+				height: 700px;
+				width: 400px;
+				background: #FFFFFF;
+				
+			}
+
+			.b{
+				margin-left: 120px;
+			}
+
+			.c{
+				margin-left: 30px;
+				width: 85%;
+				height: 40px;
+				color: #D4B8B3;
+			}
+
+			.d{
+				margin-left: 30px;
+				margin-top: 30px;
+				width: 85%;
+				height: 40px;
+				color: #D4B8B3;
+			}
+
+			.e{
+				background: #65747B;
+				margin-left: 30px;
+				width: 85%;
+				color: #FFFFFF;
+				height: 40px;
+			}
+
+			.f{
+				color: #93999C;
+				text-align: center;
+			}
+
+			.g{
+				text-align: center;
+				color: #1877F2;
+			}
+
+			.h{
+				color: #93999C;
+				text-align: center;
+			}
+
+			.i{
+				height: 25px;
+				width: 30px;
+				margin-left: 130px;
+				border-radius: 50%;
+			}
+
+			.j{
+				border-radius: 50%;
+				margin-left: 20px;
+				height: 25px;
+				width: 30px;
+			}
+
+			.k{
+				margin-left: 20px;
+				height: 25px;
+				width: 30px;
+				border-radius: 50%;
+			}
+
+			.l{
+				color: #C6B1BE;
+				font-size: 15px;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="a">
+			<br>
+			<h2 class="b">Profile</h2>
+			<br>
+			<form action="/profile" method="post">
+				<p>Username</p>
+				<input class="c" type="text" name="username" value=<%= data[0].username %>>
+				<p>Walletname</p>
+				<input class="d" type="text" name="walletname" value=<%= data[0].walletname %>>
+				<p>Walletid</p>
+				<input class="d" type="text" name="walletid" value=<%= data[0].walletid %>>
+				<p>Password</p>
+				<input class="d" type="password" name="password" value=<%= data[0].password %>>
+				<br>
+				<br>
+				<br>
+				<button onclick="rel()" type="submit" class="e">Submit</button>
+			</form>
+		</div>
+		
+		<script>
+			function rel(){
+				alert("Please Wait While Making Changes")
+				setTimeout(location.reload.bind(location), 1000);
+			}
+		</script>	
+	</body>
+</html>
